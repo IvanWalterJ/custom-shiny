@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Curso Inicial de Car Detailing en Cordoba, Argentina. 2 dias intensivos (20 hs), 100% practico en vehiculos reales con Mauro de Custom Shiny Car Detail.">
+  <title>Curso Inicial de Car Detailing — Custom Shiny | Cordoba</title>
+  <link rel="icon" type="image/png" href="/media/logo_transparent.png">
+  
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- FLOATING NAVIGATION BAR -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <a class="nav-brand" href="#hero" aria-label="Custom Shiny Car Detail">
+        <img src="/media/logo_transparent.png" alt="Custom Shiny Car Detail Logo" class="nav-brand-logo">
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link">Inicio</a>
+        <a href="#experiencia" class="nav-link">Experiencia</a>
+        <a href="#temario" class="nav-link">Temario</a>
+        <a href="#incluye" class="nav-link">Que Incluye</a>
+        <a href="#galeria" class="nav-link">Practica</a>
+        <a href="#inversion" class="nav-link">Inversion</a>
+        <a href="#faq" class="nav-link">Preguntas</a>
+      </nav>
+
+      <div class="nav-right">
+        <button class="btn-pill-lime framer-btn-link open-modal-btn" data-modal="reservation" type="button">
+          <span>Reservar Cupo (50%)</span>
+          <span class="arrow-icon">&rarr;</span>
+        </button>
+        <button class="menu-burger" id="menu-burger" aria-label="Abrir menu" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-backdrop" id="drawer-backdrop"></div>
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <img src="/media/logo_transparent.png" alt="Custom Shiny" class="drawer-logo">
+        <button class="drawer-close" id="drawer-close" aria-label="Cerrar menu">&times;</button>
+      </div>
+      <div class="drawer-links">
+        <a href="#hero" class="drawer-link">Inicio</a>
+        <a href="#experiencia" class="drawer-link">Experiencia (+13 Años)</a>
+        <a href="#temario" class="drawer-link">Programa Clase a Clase</a>
+        <a href="#incluye" class="drawer-link">Que Incluye</a>
+        <a href="#galeria" class="drawer-link">Galeria de Practica</a>
+        <a href="#inversion" class="drawer-link">Inversion y Reserva</a>
+        <a href="#faq" class="drawer-link">Preguntas Frecuentes</a>
+      </div>
+      <div class="drawer-cta-wrap">
+        <button class="btn-pill-lime w-full open-modal-btn" data-modal="reservation">
+          <span>Reservar Mi Lugar (50%)</span>
+          <span class="arrow-icon">&rarr;</span>
+        </button>
+        <a href="https://wa.me/5493516100551?text=Hola!%20Quiero%20consultar%20por%20el%20Curso%20de%20Car%20Detailing%20del%203%20y%204%20de%20Octubre" target="_blank" rel="noopener noreferrer" class="btn-pill-outline w-full">
+          <span>Consultar por WhatsApp</span>
+          <span class="arrow-icon">&nearr;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- =========================================================================
+         2. HERO SECTION (2 COLUMNS DESKTOP, ADAPTIVE MOBILE ORDER)
+         ========================================================================= -->
+    <section class="hero-top" id="hero">
+      <div class="hero-glow-bg"></div>
+      <div class="hero-top-shell">
+        
+        <div class="hero-grid-two-col">
+          
+          <!-- LEFT COLUMN: COPY & METRICS -->
+          <div class="hero-col-copy">
+            
+            <div class="hero-badge-wrap">
+              <div class="tag-badge-mono">
+                <span class="badge-pulse-point"></span>
+                <span>PROXIMA EDICION: SABADO 3 Y DOMINGO 4 DE OCTUBRE · CORDOBA</span>
+              </div>
+            </div>
+
+            <h1 class="hero-main-title">
+              <span class="title-sub-label">CURSO INICIAL DE</span>
+              <span class="title-line-huge">
+                CAR <span class="lime-flat-text">DETAILING</span>
+              </span>
+            </h1>
+
+            <p class="hero-lead-text">
+              Aprende el oficio desde cero y adquiri las herramientas practicas, tecnicas y comerciales para trabajar de manera profesional o montar tu propio taller de estetica vehicular de alta gama.
+            </p>
+
+            <!-- 4 METRIC PILLS WITH MODERN COLORED SVGS -->
+            <div class="hero-stats-row">
+              <div class="stat-pill">
+                <div class="stat-icon-svg-wrap">
+                  <svg class="metric-svg" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="13" r="8" stroke="#00FF66" stroke-width="2"/>
+                    <path d="M12 9v4l2.5 2.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 2h4" stroke="#00FF66" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M18 5l1.5 1.5" stroke="#00FF66" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="stat-texts">
+                  <strong>2 Dias Intensivos</strong>
+                  <span>20 hs totales (9 a 19 hs)</span>
+                </div>
+              </div>
+
+              <div class="stat-pill">
+                <div class="stat-icon-svg-wrap">
+                  <svg class="metric-svg" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 13l1.5-4.5A2 2 0 018.4 7h7.2a2 2 0 011.9 1.5L19 13M3 13h18v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4z" stroke="#00FF66" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="7" cy="16.5" r="1.5" fill="#FFFFFF"/>
+                    <circle cx="17" cy="16.5" r="1.5" fill="#FFFFFF"/>
+                    <path d="M9 10h6" stroke="#00FF66" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div class="stat-texts">
+                  <strong>100% Practico</strong>
+                  <span>Sobre autos reales</span>
+                </div>
+              </div>
+
+              <div class="stat-pill">
+                <div class="stat-icon-svg-wrap">
+                  <svg class="metric-svg" viewBox="0 0 24 24" fill="none">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="#00FF66" stroke-width="2" stroke-linejoin="round" fill="rgba(0,255,102,0.18)"/>
+                  </svg>
+                </div>
+                <div class="stat-texts">
+                  <strong>Grupos Reducidos</strong>
+                  <span>Atencion 1 a 1</span>
+                </div>
+              </div>
+
+              <div class="stat-pill">
+                <div class="stat-icon-svg-wrap">
+                  <svg class="metric-svg" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 21s-6-5.33-6-10a6 6 0 1112 0c0 4.67-6 10-6 10z" stroke="#00FF66" stroke-width="1.8" fill="rgba(0,255,102,0.15)"/>
+                    <circle cx="12" cy="11" r="2.5" fill="#FFFFFF"/>
+                  </svg>
+                </div>
+                <div class="stat-texts">
+                  <strong>Cordoba Capital</strong>
+                  <span>Taller profesional</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <button class="btn-pill-lime-hero framer-btn-link open-modal-btn" data-modal="reservation" type="button">
+                <span>Asegurar Mi Cupo (Seña 50%)</span>
+                <span class="arrow-icon">&rarr;</span>
+              </button>
+              <a class="hero-secondary-link framer-btn-link" href="https://wa.me/5493516100551?text=Hola!%20Quiero%20consultar%20por%20el%20Curso%20de%20Car%20Detailing%20del%203%20y%204%20de%20Octubre" target="_blank" rel="noopener noreferrer">
+                <span>Consultar por WhatsApp</span>
+                <span class="arrow-icon">&nearr;</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: VERTICAL REEL VIDEO FRAME -->
+          <div class="hero-col-video">
+            <div class="hero-video-wrapper">
+              <div class="video-container-glass">
+                
+                <div class="video-top-bar">
+                  <div class="video-status-tag">
+                    <span class="recording-dot"></span>
+                    <span>MAURO EXPLICA EL CURSO</span>
+                  </div>
+                  
+                  <div class="video-controls-pills">
+                    <button class="btn-video-sound" id="btn-video-sound" type="button" aria-label="Activar o silenciar sonido">
+                      <span class="sound-wave-icon" id="sound-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00FF66" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                          <line x1="23" y1="9" x2="17" y2="15"></line>
+                          <line x1="17" y1="9" x2="23" y2="15"></line>
+                        </svg>
+                      </span>
+                      <span id="sound-label">Escuchar con Audio</span>
+                    </button>
+                    <button class="btn-video-play-pause" id="btn-video-play-pause" type="button" aria-label="Pausar o reproducir">
+                      <span id="play-pause-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#00FF66">
+                          <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+                          <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="video-player-frame">
+                  <video 
+                    id="hero-video" 
+                    class="hero-video-el" 
+                    playsinline 
+                    loop 
+                    muted 
+                    autoplay
+                    poster="/media/hero-poster.jpg"
+                    preload="metadata"
+                  >
+                    <source src="/media/hero-video-web.mp4" type="video/mp4">
+                    <source src="/media/hero-video.mp4" type="video/mp4">
+                    Tu navegador no soporta reproduccion de video.
+                  </video>
+                  
+                  <div class="video-click-prompt" id="video-click-prompt">
+                    <span class="pulse-play-icon">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="#00FF66">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                      </svg>
+                    </span>
+                    <span>Toca para ver la explicacion completa desde el inicio</span>
+                  </div>
+
+                  <div class="video-floating-tags">
+                    <span class="floating-tag">+13 Años de Trayectoria</span>
+                    <span class="floating-tag">Maquinas Rupes &amp; Flex</span>
+                    <span class="floating-tag">Detailing Movil Incluido</span>
+                  </div>
+
+                  <div class="video-progress-container">
+                    <div class="video-progress-bar" id="video-progress-bar"></div>
+                  </div>
+                </div>
+
+                <div class="video-bottom-caption">
+                  <p>Mauro te explica como vas a dominar cada proceso: desde el lavado seguro y pulido correctivo hasta como presupuestar y conseguir clientes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         3. STATS STRIP WITH ANIMATED NUMERIC COUNTERS
+         ========================================================================= -->
+    <section class="stats-strip-section" id="stats-strip" aria-label="Estadisticas de la formacion">
+      <div class="stats-strip-container">
+        <div class="stat-card-item">
+          <span class="stat-number" id="stat-num-1">+13</span>
+          <span class="stat-unit">AÑOS</span>
+          <p class="stat-desc">De experiencia real condensados en 2 dias sin secretos.</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card-item">
+          <span class="stat-number" id="stat-num-2">20</span>
+          <span class="stat-unit">HORAS</span>
+          <p class="stat-desc">De practica continua mano a mano sobre autos de verdad.</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card-item">
+          <span class="stat-number" id="stat-num-3">07</span>
+          <span class="stat-unit">MODULOS</span>
+          <p class="stat-desc">Programa completo: desde quimica hasta armado de negocio movil.</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-card-item">
+          <span class="stat-number" id="stat-num-4">100%</span>
+          <span class="stat-unit">PRACTICO</span>
+          <p class="stat-desc">Aprenderas con la maquina en la mano desde el minuto uno.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. EXPERIENCIA DETRAS & A QUIEN ESTA DIRIGIDO
+         ========================================================================= -->
+    <section class="experience-section" id="experiencia">
+      <div class="experience-container">
+        
+        <div class="quote-bento-card">
+          <div class="quote-glow"></div>
+          <span class="quote-symbol">&ldquo;</span>
+          <blockquote class="quote-text">
+            No te voy a enseñar solamente a limpiar autos. Te voy a transmitir lo que aprendi durante 13 años para que puedas hacer Detailing de manera profesional y evitar muchos errores que yo cometi cuando empece.
+          </blockquote>
+          <div class="quote-author-wrap">
+            <div class="author-avatar-wrap">
+              <img src="/media/mauro_portrait.jpg" alt="Mauro - Custom Shiny Car Detail" class="author-avatar">
+            </div>
+            <div class="author-info">
+              <strong class="author-name">MAURO</strong>
+              <span class="author-role">Fundador &amp; Master Detailer · Custom Shiny Car Detail</span>
+              <span class="author-tag">+13 años de experiencia profesional en Cordoba</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-header">
+            <span class="section-tag">A QUIEN ESTA DIRIGIDO</span>
+            <h2 class="audience-title">Para quienes quieren dar el salto profesional</h2>
+            <p class="audience-desc">No necesitas conocimientos previos de chapa, pintura ni mecanica. La formacion esta diseñada paso a paso para que cualquier persona con ganas aprenda con base solida.</p>
+          </div>
+
+          <div class="audience-cards-wrap">
+            
+            <div class="audience-card">
+              <div class="card-icon-pill">01</div>
+              <h3>Emprender desde cero</h3>
+              <p>Ideal si estas buscando una nueva fuente de ingresos independiente, con alta rentabilidad por trabajo y herramientas claras para arrancar.</p>
+              <ul class="card-feature-list">
+                <li>&bull; Aprendes la tecnica correcta desde el inicio</li>
+                <li>&bull; Evitas comprar maquinas innecesarias</li>
+                <li>&bull; Sabes como presupuestar tus primeros clientes</li>
+              </ul>
+            </div>
+
+            <div class="audience-card">
+              <div class="card-icon-pill">02</div>
+              <h3>Lavaderos &amp; Talleres en marcha</h3>
+              <p>Si ya tenes un lavadero o taller y queres incorporar servicios premium de pulido y sellado ceramico para multiplicar tu ticket promedio.</p>
+              <ul class="card-feature-list">
+                <li>&bull; Aumenta el valor percibido de tu negocio</li>
+                <li>&bull; Trabajos de alto margen por auto</li>
+                <li>&bull; Fideliza clientes exigentes de alta gama</li>
+              </ul>
+            </div>
+
+            <div class="audience-card">
+              <div class="card-icon-pill">03</div>
+              <h3>Entusiastas &amp; Aficionados</h3>
+              <p>Amantes de los autos que quieren dominar el cuidado estetico para mantener sus propios vehiculos al estandar de exposicion.</p>
+              <ul class="card-feature-list">
+                <li>&bull; Cuidas la pintura original sin dañarla</li>
+                <li>&bull; Dominas el uso seguro de pulidoras rotativas</li>
+                <li>&bull; Disfrutas el arte de la perfeccion en cada detalle</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. TEMARIO CLASE A CLASE (7 MODULOS)
+         ========================================================================= -->
+    <section class="syllabus-section" id="temario">
+      <div class="syllabus-container">
+        
+        <div class="section-tag-wrap text-center">
+          <span class="section-tag">PROGRAMA DE CAPACITACION</span>
+          <h2 class="section-title">Clase a Clase: Domina el Oficio de Punta a Punta</h2>
+          <p class="section-subtitle">
+            20 horas estructuradas para que incorpores tecnica, criterio y velocidad de trabajo real.
+          </p>
+        </div>
+
+        <div class="modules-grid">
+          
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-number">01</span>
+              <span class="module-badge">FUNDAMENTOS</span>
+            </div>
+            <h3 class="module-title">Introduccion al Detailing</h3>
+            <p class="module-desc">
+              Que es el Car Detailing y cual es la diferencia entre una limpieza convencional y un servicio profesional. Organizacion del trabajo, seguridad, cuidado de superficies y criterios basicos para evaluar un vehiculo.
+            </p>
+            <div class="module-points">
+              <span class="point-chip">Organizacion del taller</span>
+              <span class="point-chip">Criterios de evaluacion</span>
+              <span class="point-chip">Quimica y seguridad</span>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-number">02</span>
+              <span class="module-badge">LAVADO &amp; QUIMICA</span>
+            </div>
+            <h3 class="module-title">Lavado Profesional y Descontaminacion</h3>
+            <p class="module-desc">
+              Prelavado, foam, lavado seguro con tecnica de 2 baldes para reducir riesgos sobre la pintura, limpieza profunda de llantas y neumaticos, secado tecnico y descontaminacion ferrea y mecanica de la superficie.
+            </p>
+            <div class="module-points">
+              <span class="point-chip">Snow foam activa</span>
+              <span class="point-chip">Descontaminado ferreo</span>
+              <span class="point-chip">Clay bar mecanica</span>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-number">03</span>
+              <span class="module-badge">HABITACULO</span>
+            </div>
+            <h3 class="module-title">Detailing de Interiores</h3>
+            <p class="module-desc">
+              Limpieza profunda de tapizados, plasticos y superficies interiores. Uso correcto de productos y herramientas, vapor a alta presion, tecnicas de limpieza y terminaciones profesionales mate sin siliconas grasosas.
+            </p>
+            <div class="module-points">
+              <span class="point-chip">Vapor seco a 140°C</span>
+              <span class="point-chip">Nutricion de cueros</span>
+              <span class="point-chip">Acabado mate OEM</span>
+            </div>
+          </div>
+
+          <div class="module-card highlight-module">
+            <div class="module-header">
+              <span class="module-number">04</span>
+              <span class="module-badge lime">MODULO CLAVE</span>
+            </div>
+            <h3 class="module-title">Pulido y Correccion de Pintura</h3>
+            <p class="module-desc">
+              Introduccion al pulido tecnico, tipos de maquinas rotativas y roto-orbitales, pads de lana y espuma, eleccion de compuestos abrasivos, preparacion de la superficie, tecnicas basicas de correccion y errores frecuentes a evitar.
+            </p>
+            <div class="module-points">
+              <span class="point-chip">Maquinas D/A y Rotativas</span>
+              <span class="point-chip">Seleccion de pads y pastas</span>
+              <span class="point-chip">Eliminacion de swirls</span>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-number">05</span>
+              <span class="module-badge">SELLADOS</span>
+            </div>
+            <h3 class="module-title">Proteccion y Mantenimiento</h3>
+            <p class="module-desc">
+              Selladores ceramicos, ceras y protecciones. Como elegir el tratamiento adecuado segun el vehiculo y las necesidades del cliente. Recomendaciones de mantenimiento preventivo para conservar el resultado en el tiempo.
+            </p>
+            <div class="module-points">
+              <span class="point-chip">Ceramic Coating 9H</span>
+              <span class="point-chip">Ceras y selladores</span>
+              <span class="point-chip">Pautas post-tratamiento</span>
+            </div>
+          </div>
+
+          <div class="module-card">
+            <div class="module-header">
+              <span class="module-number">06</span>
+              <span class="module-badge">NEGOCIO</span>
+            </div>
+            <h3 class="module-title">El Detailing como Negocio</h3>
+            <p class="module-desc">
+              Como armar un servicio profesional, calcular costos de insumos, definir precios rentables, cuidar la ganancia neta, presentar los servicios al cliente y conseguir los primeros trabajos con confianza.
+            </p>
+            <div class="module-points">
+              <span class="point-chip">Costeo por vehiculo</span>
+              <span class="point-chip">Fijacion de precios</span>
+              <span class="point-chip">Como cerrar clientes</span>
+            </div>
+          </div>
+
+          <div class="module-card highlight-module-mobile">
+            <div class="module-header">
+              <span class="module-number">07</span>
+              <span class="module-badge lime">TALLER MOVIL</span>
+            </div>
+            <h3 class="module-title">Como Armar un Detailing Movil</h3>
+            <p class="module-desc">
+              Eleccion del vehiculo utilitario, equipamiento necesario, tanques, bombas, generadores, maquinas, productos, distribucion interna del espacio y como ofrecer un servicio de detailing movil a domicilio con alta demanda.
+            </p>
+            <div class="module-points">
+              <span class="point-chip">Equipamiento del furgon</span>
+              <span class="point-chip">Generadores e hidros</span>
+              <span class="point-chip">Operacion a domicilio</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. QUE INCLUYE (BENTO GRID WITH MODERN COLORED SVGS)
+         ========================================================================= -->
+    <section class="includes-section" id="incluye">
+      <div class="includes-container">
+        
+        <div class="section-tag-wrap text-center">
+          <span class="section-tag">EQUIPAMIENTO &amp; BENEFICIOS</span>
+          <h2 class="section-title">Que Incluye la Capacitacion</h2>
+          <p class="section-subtitle">
+            Todo lo necesario para que tu experiencia sea 100% formativa y sin gastos ocultos.
+          </p>
+        </div>
+
+        <div class="includes-bento-grid">
+          
+          <div class="bento-card bento-span-2">
+            <div class="bento-svg-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M5 13l1.5-4.5A2 2 0 018.4 7h7.2a2 2 0 011.9 1.5L19 13M3 13h18v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4z" stroke="#00FF66" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="7" cy="16.5" r="1.5" fill="#FFFFFF"/>
+                <circle cx="17" cy="16.5" r="1.5" fill="#FFFFFF"/>
+                <path d="M9 10h6" stroke="#00FF66" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M12 2v3M10 3.5l4-1" stroke="#00FF66" stroke-width="1.3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Clases Practicas sobre Vehiculos Reales</h3>
+            <p>Nada de maquetas o paneles de chatarra. Vas a trabajar directamente sobre autos completos para entender el comportamiento de esquinas, paneles plasticos, vidrios y pinturas con diferentes durezas de laca.</p>
+            <div class="bento-footer-tag">Practica Verdadera</div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-svg-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M9 3h6M10 3v5l-4.5 9A2 2 0 007.3 20h9.4a2 2 0 001.8-3L14 8V3" stroke="#00FF66" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7 15h10" stroke="#00FF66" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="10" cy="17" r="1" fill="#FFFFFF"/>
+                <circle cx="14" cy="16.5" r="1.5" fill="#FFFFFF"/>
+              </svg>
+            </div>
+            <h3>Materiales e Insumos Incluidos</h3>
+            <p>Todas las maquinas (rotativas y roto-orbitales), pads, pastas de pulir, microfibras y quimicos utilizados durante el curso estan 100% cubiertos.</p>
+            <div class="bento-footer-tag">Todo Provisto</div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-svg-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="13" rx="2" stroke="#00FF66" stroke-width="1.8"/>
+                <path d="M7 8h10M7 11h6" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/>
+                <circle cx="16" cy="14" r="3" stroke="#00FF66" stroke-width="1.8" fill="rgba(0,255,102,0.2)"/>
+                <path d="M15 16.5l-1 3.5 2-1 2 1-1-3.5" stroke="#00FF66" stroke-width="1.4" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Certificado Oficial de Finalizacion</h3>
+            <p>Diploma acreditando las 20 horas de formacion intensiva presencial bajo el respaldo tecnico de Custom Shiny Car Detail.</p>
+            <div class="bento-footer-tag">Acreditacion Oficial</div>
+          </div>
+
+          <div class="bento-card bento-span-2">
+            <div class="bento-svg-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M4 19.5v-15A2.5 2.5 0 016.5 2H20v20H6.5a2.5 2.5 0 01-2.5-2.5z" stroke="#00FF66" stroke-width="1.8"/>
+                <path d="M7 6h10M7 10h10M7 14h7" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M4 19.5A2.5 2.5 0 016.5 17H20" stroke="#00FF66" stroke-width="1.8"/>
+              </svg>
+            </div>
+            <h3>Guia Tecnica de Procedimientos Post-Curso</h3>
+            <p>Te llevas un manual practico con combinaciones de pads/pastas recomendadas para cada tipo de auto, checklist de lavado seguro y recomendaciones para continuar practicando sin cometer errores.</p>
+            <div class="bento-footer-tag">Material de Consulta</div>
+          </div>
+
+          <div class="bento-card">
+            <div class="bento-svg-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                <path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke="#00FF66" stroke-width="1.8" stroke-linecap="round"/>
+                <circle cx="9" cy="7" r="4" stroke="#00FF66" stroke-width="1.8"/>
+                <path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Acompañamiento Durante Todo el Proceso</h3>
+            <p>Atencion directa y seguimiento personalizado de Mauro mientras estas con la maquina en la mano, corrigiendo tu tecnica en tiempo real.</p>
+            <div class="bento-footer-tag">Atencion 1 a 1</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. GALERIA DE PRACTICA REAL
+         ========================================================================= -->
+    <section class="gallery-section" id="galeria">
+      <div class="gallery-container">
+        
+        <div class="section-tag-wrap text-center">
+          <span class="section-tag">EN EL TALLER</span>
+          <h2 class="section-title">Asi se Vive la Experiencia Custom Shiny</h2>
+          <p class="section-subtitle">
+            Fotos reales de las jornadas de formacion: alumnos puliendo, ambiente de trabajo profesional y resultados de alta gama.
+          </p>
+        </div>
+
+        <div class="gallery-mosaic">
+          
+          <div class="gallery-item item-large">
+            <img src="/media/action_polishing_hood.jpg" alt="Alumno puliendo capot con maquina rotativa" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="overlay-tag">Correccion de Barniz</span>
+              <h4>Practica de corte y nivelado</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="/media/action_headlight_restoration.jpg" alt="Restauracion de opticas con mini pulidora" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="overlay-tag">Detalle de Precision</span>
+              <h4>Restauracion de policarbonato</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="/media/action_foam_wash.jpg" alt="Lavado tecnico con snow foam activa" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="overlay-tag">Lavado Seguro</span>
+              <h4>Espuma activa &amp; Descontaminacion</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="/media/mobile_van_interior.jpg" alt="Interior equipado de furgon de detailing movil" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="overlay-tag">Detailing Movil</span>
+              <h4>Equipamiento del furgon</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item item-wide">
+            <img src="/media/action_graduation_students.jpg" alt="Entrega de certificados oficiales a los alumnos" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="overlay-tag">Graduacion</span>
+              <h4>Entrega de diplomas oficiales</h4>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="/media/action_student_polishing_side.jpg" alt="Alumno trabajando en el lateral del vehiculo" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="overlay-tag">Postura y Ergonomia</span>
+              <h4>Tecnica sobre paneles laterales</h4>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. DETALLES DE LA CAPACITACION & INVERSION
+         ========================================================================= -->
+    <section class="pricing-section" id="inversion">
+      <div class="pricing-glow-ambient"></div>
+      <div class="pricing-container">
+        
+        <div class="pricing-card">
+          <div class="pricing-badge-top">
+            <span class="pulse-point"></span>
+            <span>PROXIMA EDICION: SABADO 3 Y DOMINGO 4 DE OCTUBRE</span>
+          </div>
+
+          <div class="pricing-card-header">
+            <h2 class="pricing-title">CURSO INICIAL DE CAR DETAILING</h2>
+            <p class="pricing-subtitle">Modalidad Presencial Personalizada · Cordoba Capital, Argentina</p>
+          </div>
+
+          <div class="pricing-price-box">
+            <div class="price-main-wrap">
+              <span class="price-currency">$</span>
+              <span class="price-amount">299.000</span>
+              <span class="price-unit">pesos ARS</span>
+            </div>
+            <div class="price-reservation-pill">
+              <span class="res-tag">RESERVA DE LUGAR:</span>
+              <strong class="res-val">50% ($ 149.500 ARS)</strong>
+              <span class="res-note">El 50% restante se cancela al ingresar el primer dia</span>
+            </div>
+          </div>
+
+          <div class="pricing-details-grid">
+            <div class="detail-item">
+              <span class="detail-label">FECHAS</span>
+              <strong class="detail-val">Sabado 3 y Domingo 4 de Octubre</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">HORARIOS</span>
+              <strong class="detail-val">09:00 hs a 19:00 hs (20 hs intensivas)</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">LUGAR</span>
+              <strong class="detail-val">Taller Custom Shiny · Cordoba Capital</strong>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">CUPOS</span>
+              <strong class="detail-val lime-text">Estrictamente Limitados (Atencion 1 a 1)</strong>
+            </div>
+          </div>
+
+          <div class="pricing-check-list">
+            <div class="check-item">&bull; 20 horas de instruccion teorico-practica intensiva</div>
+            <div class="check-item">&bull; Practica continua sobre autos reales con pulidoras profesionales</div>
+            <div class="check-item">&bull; Todos los insumos, quimicos y elementos de trabajo provistos</div>
+            <div class="check-item">&bull; Coffee Break y refrigerios incluidos durante ambas jornadas</div>
+            <div class="check-item">&bull; Certificado oficial de finalizacion Custom Shiny</div>
+            <div class="check-item">&bull; Canal directo de WhatsApp con Mauro para dudas post-curso</div>
+          </div>
+
+          <div class="pricing-cta-wrap">
+            <button class="btn-pill-lime-large w-full open-modal-btn" data-modal="reservation" type="button">
+              <span>Señar Lugar Ahora ($ 149.500)</span>
+              <span class="arrow-icon">&rarr;</span>
+            </button>
+            <a href="https://wa.me/5493516100551?text=Hola!%20Quiero%20reservar%20mi%20lugar%20para%20el%20curso%20de%20detailing%20del%203%20y%204%20de%20Octubre" target="_blank" rel="noopener noreferrer" class="btn-pill-trans-large w-full">
+              <span>Consultar por WhatsApp</span>
+              <span class="arrow-icon">&nearr;</span>
+            </a>
+          </div>
+
+          <div class="pricing-security-note">
+            <span>Reserva segura via Mercado Pago o Transferencia Bancaria</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. PREGUNTAS FRECUENTES (FAQ)
+         ========================================================================= -->
+    <section class="faq-section" id="faq">
+      <div class="faq-container">
+        
+        <div class="section-tag-wrap text-center">
+          <span class="section-tag">DUDAS COMUNES</span>
+          <h2 class="section-title">Preguntas Frecuentes</h2>
+          <p class="section-subtitle">Informacion clave sobre el desarrollo de la capacitacion.</p>
+        </div>
+
+        <div class="faq-accordion">
+          
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Requisitos previos: No se requiere experiencia en estetica o pintura</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>El curso esta pensado para arrancar desde cero. Te enseñamos a evaluar la superficie, sostener la pulidora con la postura correcta, elegir los productos y graduar la velocidad sin correr riesgo de dañar la pintura.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Herramientas y productos: Todo el material de trabajo esta provisto</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No tenes que traer nada. En el taller te entregamos todos los elementos de seguridad y dispones de pulidoras profesionales (rotativas y roto-orbitales), pads de corte y terminacion, pastas pulidoras y quimicos de primera linea.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Metodo de inscripcion: Como reservar el lugar y congelar el valor</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>El cupo se congela abonando el 50% de seña ($149.500 ARS) mediante Mercado Pago (con tarjeta de credito, debito o dinero en cuenta) o Transferencia Bancaria Directa. El 50% restante se abona el sabado de inicio en el taller.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Modalidad de trabajo: Grupos reducidos con seguimiento individual</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Mantenemos grupos estrictamente reducidos para garantizar que cada participante tenga una pulidora en la mano la mayor cantidad de tiempo posible y reciba feedback individual de Mauro panel por panel.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Certificado entregado al finalizar la capacitacion</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Recibis el Certificado Oficial de Finalizacion en Curso Inicial de Car Detailing emitido por Custom Shiny Car Detail, certificando 20 horas de formacion intensiva presencial.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button">
+              <span>Soporte posterior: Consultas directas cuando empieces a trabajar</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Contas con contacto directo via WhatsApp con Mauro para sacarte dudas en tus primeros trabajos reales, consultar como encarar un barniz complejo o pedir recomendaciones sobre presupuestos.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10. FINAL BANNER
+         ========================================================================= -->
+    <section class="final-cta-section">
+      <div class="final-cta-shell">
+        <span class="section-tag">EMPEZA HOY</span>
+        <h2 class="final-cta-title">
+          Aprende. Practica.<br>
+          <span class="lime-flat-text">Profesionalizate.</span>
+        </h2>
+        <p class="final-cta-desc">
+          No te quedes afuera de la edicion del 3 y 4 de Octubre. Dale a tu pasion una salida laboral rentable y con futuro en el mundo del detailing.
+        </p>
+        <div class="hero-cta-group justify-center">
+          <button class="btn-pill-lime-hero framer-btn-link open-modal-btn" data-modal="reservation" type="button">
+            <span>Reservar Mi Lugar (Seña 50%)</span>
+            <span class="arrow-icon">&rarr;</span>
+          </button>
+          <a class="hero-secondary-link framer-btn-link" href="https://wa.me/5493516100551?text=Hola!%20Quiero%20consultar%20por%20el%20curso%20antes%20de%20anotarme" target="_blank" rel="noopener noreferrer">
+            <span>Consultar por WhatsApp</span>
+            <span class="arrow-icon">&nearr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       11. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand-col">
+        <img src="/media/logo_transparent.png" alt="Custom Shiny Logo" class="footer-logo">
+        <p class="footer-brand-text">
+          Estudio de Estetica Automotriz &amp; Capacitacion Profesional de Detailing en Cordoba, Argentina.
+        </p>
+        <div class="footer-contact-info">
+          <p><strong>Ubicacion:</strong> Cordoba Capital, Argentina</p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/5493516100551" target="_blank" rel="noopener noreferrer">+54 9 351 610-0551</a></p>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Navegacion</h4>
+        <a href="#hero">Inicio</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#temario">Temario</a>
+        <a href="#incluye">Que Incluye</a>
+        <a href="#inversion">Inversion</a>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Contacto Rapido</h4>
+        <a href="https://wa.me/5493516100551?text=Hola!%20Quiero%20informacion%20del%20curso" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
+        <button class="footer-btn-link open-modal-btn" data-modal="reservation">Ver Datos de Seña</button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>&copy; <span id="year">2026</span> Custom Shiny Car Detail. Todos los derechos reservados.</p>
+        <p class="footer-credit">Propuesta de capacitacion · Cordoba, Argentina.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       12. RESERVATION & MERCADO PAGO MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop" id="reservation-modal" aria-hidden="true" role="dialog" aria-label="Reserva de Cupo">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Cerrar ventana">&times;</button>
+
+      <div class="modal-header">
+        <div class="modal-badge">
+          <span class="dot-lime"></span>
+          <span>RESERVA DE CUPO · EDICION 3 Y 4 DE OCTUBRE</span>
+        </div>
+        <h3 class="modal-title">Asegura tu lugar en el Curso</h3>
+        <p class="modal-desc">
+          Para congelar tu plaza en el taller, se requiere una seña del <strong>50% ($ 149.500 ARS)</strong>. El 50% restante se cancela el primer dia al ingresar.
+        </p>
+      </div>
+
+      <div class="modal-body">
+        
+        <div class="modal-payment-card">
+          <div class="pay-option active" id="pay-opt-mp">
+            <div class="pay-header">
+              <span class="pay-title">Opcion 1: Mercado Pago (Tarjetas, Debito o Dinero en cuenta)</span>
+              <span class="pay-tag-instant">Acreditacion Inmediata</span>
+            </div>
+            <p class="pay-info">Abona tu seña de <strong>$ 149.500 ARS</strong> de forma segura con tarjeta de credito en cuotas, debito o saldo en cuenta.</p>
+            
+            <a 
+              href="https://mpago.la/pos/customshiny" 
+              id="mp-checkout-btn" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="btn-pill-lime-large w-full modal-action-btn"
+            >
+              <span>Pagar Seña con Mercado Pago ($ 149.500)</span>
+              <span class="arrow-icon">&rarr;</span>
+            </a>
+          </div>
+
+          <div class="pay-divider"><span>O POR TRANSFERENCIA</span></div>
+
+          <div class="pay-option" id="pay-opt-bank">
+            <div class="pay-header">
+              <span class="pay-title">Opcion 2: Transferencia Bancaria Directa</span>
+            </div>
+            <div class="bank-details-box">
+              <div class="bank-row">
+                <span>Alias:</span>
+                <strong id="alias-text">CUSTOM.SHINY.MP</strong>
+                <button class="btn-copy-alias" id="btn-copy-alias" type="button" title="Copiar Alias">Copiar</button>
+              </div>
+              <div class="bank-row">
+                <span>Titular:</span>
+                <strong>Mauro - Custom Shiny Car Detail</strong>
+              </div>
+              <div class="bank-row">
+                <span>Monto Seña:</span>
+                <strong class="lime-text">$ 149.500 ARS</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-whatsapp-confirm">
+          <p>Envianos el comprobante para confirmar tu inscripcion de inmediato</p>
+          <a 
+            href="https://wa.me/5493516100551?text=Hola!%20Acabo%20de%20hacer%20la%20seña%20del%20curso%20y%20te%20envio%20el%20comprobante%20para%20confirmar%20mi%20lugar%20del%203%20y%204%20de%20Octubre." 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="btn-pill-trans-large w-full modal-wa-btn"
+          >
+            <span>Enviar Comprobante por WhatsApp</span>
+            <span class="arrow-icon">&nearr;</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
