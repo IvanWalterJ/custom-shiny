@@ -7,6 +7,12 @@ gsap.registerPlugin(ScrollTrigger);
 let lenisInstance = null;
 
 document.addEventListener('DOMContentLoaded', () => {
+  // 0. Prevent auto-scroll jump on page load/refresh
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+
   // 1. Lenis Smooth Scroll Engine
   lenisInstance = new Lenis({
     duration: 1.1,
@@ -19,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   lenisInstance.on('scroll', ScrollTrigger.update);
   gsap.ticker.add((time) => lenisInstance.raf(time * 1000));
   gsap.ticker.lagSmoothing(0);
+  lenisInstance.scrollTo(0, { immediate: true });
 
   // Smooth Anchor Navigation
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -443,7 +450,7 @@ function setupStudioGallery() {
 
   const pad = (value) => String(value + 1).padStart(2, '0');
 
-  const update = (next) => {
+  const update = (next, isUserAction = false) => {
     active = (next + slides.length) % slides.length;
     slides.forEach((slide, index) => {
       slide.classList.remove('is-active', 'is-prev', 'is-next');
@@ -456,11 +463,13 @@ function setupStudioGallery() {
       }
     });
 
+    const thumbsContainer = gallery.querySelector('.gallery-thumbs');
     thumbs.forEach((thumb, index) => {
       const isActive = index === active;
       thumb.classList.toggle('is-active', isActive);
-      if (isActive) {
-        thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      if (isActive && isUserAction && thumbsContainer) {
+        const targetLeft = thumb.offsetLeft - (thumbsContainer.clientWidth / 2) + (thumb.clientWidth / 2);
+        thumbsContainer.scrollTo({ left: targetLeft, behavior: 'smooth' });
       }
     });
 
@@ -468,16 +477,16 @@ function setupStudioGallery() {
     if (bar) bar.style.width = `${((active + 1) / slides.length) * 100}%`;
   };
 
-  gallery.querySelector('.gallery-prev')?.addEventListener('click', () => update(active - 1));
-  gallery.querySelector('.gallery-next')?.addEventListener('click', () => update(active + 1));
+  gallery.querySelector('.gallery-prev')?.addEventListener('click', () => update(active - 1, true));
+  gallery.querySelector('.gallery-next')?.addEventListener('click', () => update(active + 1, true));
 
   thumbs.forEach((thumb) => {
-    thumb.addEventListener('click', () => update(Number(thumb.dataset.galleryTarget)));
+    thumb.addEventListener('click', () => update(Number(thumb.dataset.galleryTarget), true));
   });
 
   slides.forEach((slide, index) => {
     slide.addEventListener('click', () => {
-      if (index !== active) update(index);
+      if (index !== active) update(index, true);
     });
   });
 
@@ -493,8 +502,8 @@ function setupStudioGallery() {
     touchEndX = e.changedTouches[0].screenX;
     const diff = touchStartX - touchEndX;
     if (Math.abs(diff) > 40) {
-      if (diff > 0) update(active + 1);
-      else update(active - 1);
+      if (diff > 0) update(active + 1, true);
+      else update(active - 1, true);
     }
   }, { passive: true });
 
@@ -504,5 +513,5 @@ function setupStudioGallery() {
     gallery.style.setProperty('--my', `${event.clientY - rect.top}px`);
   });
 
-  update(0);
+  update(0, false);
 }
