@@ -589,8 +589,8 @@
       </div>
     </section>
 
-    <!-- =========================================================================
-         7. GALERIA DE PRACTICA REAL
+        <!-- =========================================================================
+         7. GALERIA DE PRACTICA REAL (STUDIO CAROUSEL)
          ========================================================================= -->
     <section class="gallery-section" id="galeria">
       <div class="gallery-container">
@@ -599,60 +599,149 @@
           <span class="section-tag">EN EL TALLER</span>
           <h2 class="section-title">Asi se Vive la Experiencia Custom Shiny</h2>
           <p class="section-subtitle">
-            Fotos reales de las jornadas de formacion: alumnos puliendo, ambiente de trabajo profesional y resultados de alta gama.
+            Registros directos desde nuestras jornadas intensivas: alumnos puliendo vehiculos de alta gama, quimica profesional y certificacion oficial.
           </p>
         </div>
 
-        <div class="gallery-mosaic">
+        <div class="studio-gallery" data-gallery>
+          <button class="gallery-arrow gallery-prev" type="button" aria-label="Foto anterior">&#8249;</button>
           
-          <div class="gallery-item item-large">
-            <img src="/media/action_polishing_hood.jpg" alt="Alumno puliendo capot con maquina rotativa" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="overlay-tag">Correccion de Barniz</span>
-              <h4>Practica de corte y nivelado</h4>
-            </div>
+          <div class="gallery-stage" aria-live="polite">
+            
+            <!-- Slide 01: BMW Serie 3 Pulido Rotativo -->
+            <article class="gallery-slide is-active" data-slide-index="0">
+              <img src="/media/gallery/gallery_11.jpg" alt="Practica de pulido individual en BMW Serie 3" loading="eager">
+              <span class="slide-badge">01</span>
+              <div class="slide-info-overlay">
+                <span class="slide-tag">PRACTICA CON PULIDORA</span>
+                <h4 class="slide-title">Correccion sobre BMW Serie 3</h4>
+                <p class="slide-desc">Postura ergonomica, graduacion de velocidad y eliminacion de swirls sobre laca dura alemana.</p>
+              </div>
+            </article>
+
+            <!-- Slide 02: Mini Cooper Restauracion de Opticas -->
+            <article class="gallery-slide is-next" data-slide-index="1">
+              <img src="/media/gallery/gallery_02.jpg" alt="Restauracion de opticas de policarbonato con mini pulidora" loading="lazy">
+              <span class="slide-badge">02</span>
+              <div class="slide-info-overlay">
+                <span class="slide-tag">DETALLE DE PRECISION</span>
+                <h4 class="slide-title">Restauracion en Mini Cooper</h4>
+                <p class="slide-desc">Uso de mini pulidora para opticas de policarbonato, molduras curvas y zonas de dificil acceso.</p>
+              </div>
+            </article>
+
+            <!-- Slide 03: Soft99 H-7 Glass Coat -->
+            <article class="gallery-slide" data-slide-index="2">
+              <img src="/media/gallery/gallery_07.jpg" alt="Sellador ceramico japones Soft99 H-7 Glass Coat" loading="lazy">
+              <span class="slide-badge">03</span>
+              <div class="slide-info-overlay">
+                <span class="slide-tag">SELLADO CERAMICO 9H</span>
+                <h4 class="slide-title">Tratamiento Japones Soft99 H-7</h4>
+                <p class="slide-desc">Aplicacion de nanotecnologia de vidrio sobre VW Vento GLI para brillo espejo y maxima repelencia.</p>
+              </div>
+            </article>
+
+            <!-- Slide 04: Trabajo en Taller con Alumnos -->
+            <article class="gallery-slide" data-slide-index="3">
+              <img src="/media/gallery/gallery_05.jpg" alt="Alumnos trabajando en pulido de paneles" loading="lazy">
+              <span class="slide-badge">04</span>
+              <div class="slide-info-overlay">
+                <span class="slide-tag">TRABAJO EN TALLER REAL</span>
+                <h4 class="slide-title">Pulido Simultaneo de Paneles</h4>
+                <p class="slide-desc">Alumnos trabajando con pads de corte y terminacion sobre piso modular de estudio profesional.</p>
+              </div>
+            </article>
+
+            <!-- Slide 05: Micro Pulido Interior Menzerna -->
+            <article class="gallery-slide" data-slide-index="4">
+              <img src="/media/gallery/gallery_09.jpg" alt="Micro pulido de molduras interiores con Menzerna" loading="lazy">
+              <span class="slide-badge">05</span>
+              <div class="slide-info-overlay">
+                <span class="slide-tag">MICRO PULIDO INTERIOR</span>
+                <h4 class="slide-title">Molduras con Menzerna Super Finish</h4>
+                <p class="slide-desc">Tecnica con mini torno y pasta de terminacion alemana para eliminar micro-rayas en interiores.</p>
+              </div>
+            </article>
+
+            <!-- Slide 06: Lavado Seguro con Brochas -->
+            <article class="gallery-slide" data-slide-index="5">
+              <img src="/media/gallery/gallery_04.jpg" alt="Lavado seguro con brocha ultra suave y espuma" loading="lazy">
+              <span class="slide-badge">06</span>
+              <div class="slide-info-overlay">
+                <span class="slide-tag">LAVADO TECNICO &amp; DETALLE</span>
+                <h4 class="slide-title">Limpieza Profunda con Brochas Soft</h4>
+                <p class="slide-desc">Descontaminacion ferrea, limpieza de burletes y paneles interiores sin dañar las superficies.</p>
+              </div>
+            </article>
+
+            <!-- Slide 07: Mentoria 1 a 1 con Mauro -->
+            <article class="gallery-slide" data-slide-index="6">
+              <img src="/media/gallery/gallery_08.jpg" alt="Mauro asesorando a alumno en el taller" loading="lazy">
+              <span class="slide-badge">07</span>
+              <div class="slide-info-overlay">
+                <span class="slide-tag">MENTORIA 1 A 1 CON MAURO</span>
+                <h4 class="slide-title">Enmascarado y Diagnostico</h4>
+                <p class="slide-desc">Mauro guiandote paso a paso en la preparacion y evaluacion del espesor de laca antes de pulir.</p>
+              </div>
+            </article>
+
+            <!-- Slide 08: Graduacion & Certificado Oficial -->
+            <article class="gallery-slide is-prev" data-slide-index="7">
+              <img src="/media/gallery/gallery_01.jpg" alt="Entrega de certificados oficiales Custom Shiny" loading="lazy">
+              <span class="slide-badge">08</span>
+              <div class="slide-info-overlay">
+                <span class="slide-tag">CERTIFICACION OFICIAL</span>
+                <h4 class="slide-title">Entrega de Diplomas Custom Shiny</h4>
+                <p class="slide-desc">Certificado oficial respaldando tus 20 horas de capacitacion intensiva y dominio del oficio.</p>
+              </div>
+            </article>
+
           </div>
 
-          <div class="gallery-item">
-            <img src="/media/action_headlight_restoration.jpg" alt="Restauracion de opticas con mini pulidora" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="overlay-tag">Detalle de Precision</span>
-              <h4>Restauracion de policarbonato</h4>
-            </div>
+          <button class="gallery-arrow gallery-next" type="button" aria-label="Foto siguiente">&#8250;</button>
+
+          <!-- Progress Indicator -->
+          <div class="gallery-progress" aria-hidden="true">
+            <strong data-gallery-current>01</strong>
+            <span><i data-gallery-bar></i></span>
+            <strong data-gallery-total>08</strong>
           </div>
 
-          <div class="gallery-item">
-            <img src="/media/action_foam_wash.jpg" alt="Lavado tecnico con snow foam activa" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="overlay-tag">Lavado Seguro</span>
-              <h4>Espuma activa &amp; Descontaminacion</h4>
-            </div>
+          <!-- Thumbnail Strip -->
+          <div class="gallery-thumbs" aria-label="Seleccionar foto">
+            <button class="is-active" type="button" data-gallery-target="0" title="BMW Serie 3">
+              <img src="/media/gallery/thumb_11.jpg" alt="BMW Serie 3">
+              <span>01</span>
+            </button>
+            <button type="button" data-gallery-target="1" title="Mini Cooper">
+              <img src="/media/gallery/thumb_02.jpg" alt="Mini Cooper">
+              <span>02</span>
+            </button>
+            <button type="button" data-gallery-target="2" title="Sellador H-7">
+              <img src="/media/gallery/thumb_07.jpg" alt="Sellador H-7">
+              <span>03</span>
+            </button>
+            <button type="button" data-gallery-target="3" title="Pulido en Taller">
+              <img src="/media/gallery/thumb_05.jpg" alt="Pulido en Taller">
+              <span>04</span>
+            </button>
+            <button type="button" data-gallery-target="4" title="Micro Pulido Menzerna">
+              <img src="/media/gallery/thumb_09.jpg" alt="Micro Pulido Menzerna">
+              <span>05</span>
+            </button>
+            <button type="button" data-gallery-target="5" title="Lavado Tecnico">
+              <img src="/media/gallery/thumb_04.jpg" alt="Lavado Tecnico">
+              <span>06</span>
+            </button>
+            <button type="button" data-gallery-target="6" title="Mentoria con Mauro">
+              <img src="/media/gallery/thumb_08.jpg" alt="Mentoria con Mauro">
+              <span>07</span>
+            </button>
+            <button type="button" data-gallery-target="7" title="Entrega de Diplomas">
+              <img src="/media/gallery/thumb_01.jpg" alt="Entrega de Diplomas">
+              <span>08</span>
+            </button>
           </div>
-
-          <div class="gallery-item">
-            <img src="/media/mobile_van_interior.jpg" alt="Interior equipado de furgon de detailing movil" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="overlay-tag">Detailing Movil</span>
-              <h4>Equipamiento del furgon</h4>
-            </div>
-          </div>
-
-          <div class="gallery-item item-wide">
-            <img src="/media/action_graduation_students.jpg" alt="Entrega de certificados oficiales a los alumnos" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="overlay-tag">Graduacion</span>
-              <h4>Entrega de diplomas oficiales</h4>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <img src="/media/action_student_polishing_side.jpg" alt="Alumno trabajando en el lateral del vehiculo" loading="lazy">
-            <div class="gallery-overlay">
-              <span class="overlay-tag">Postura y Ergonomia</span>
-              <h4>Tecnica sobre paneles laterales</h4>
-            </div>
-          </div>
-
         </div>
 
       </div>

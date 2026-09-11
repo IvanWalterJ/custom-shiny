@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupSectionHeadingsReveal();
   setupCountUpCounters();
   setupScrollAnimations();
+  setupStudioGallery();
 
   // 7. Footer Year
   const yearEl = document.getElementById('year');
@@ -424,4 +425,84 @@ function setupScrollAnimations() {
       }
     );
   });
+}
+
+
+/* ==========================================================================
+   STUDIO GALLERY CAROUSEL (LA COCHERA ARCHITECTURE)
+   ========================================================================== */
+function setupStudioGallery() {
+  const gallery = document.querySelector('[data-gallery]');
+  if (!gallery) return;
+
+  const slides = [...gallery.querySelectorAll('.gallery-slide')];
+  const thumbs = [...gallery.querySelectorAll('[data-gallery-target]')];
+  const current = gallery.querySelector('[data-gallery-current]');
+  const bar = gallery.querySelector('[data-gallery-bar]');
+  let active = 0;
+
+  const pad = (value) => String(value + 1).padStart(2, '0');
+
+  const update = (next) => {
+    active = (next + slides.length) % slides.length;
+    slides.forEach((slide, index) => {
+      slide.classList.remove('is-active', 'is-prev', 'is-next');
+      if (index === active) {
+        slide.classList.add('is-active');
+      } else if (index === (active - 1 + slides.length) % slides.length) {
+        slide.classList.add('is-prev');
+      } else if (index === (active + 1) % slides.length) {
+        slide.classList.add('is-next');
+      }
+    });
+
+    thumbs.forEach((thumb, index) => {
+      const isActive = index === active;
+      thumb.classList.toggle('is-active', isActive);
+      if (isActive) {
+        thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+    });
+
+    if (current) current.textContent = pad(active);
+    if (bar) bar.style.width = `${((active + 1) / slides.length) * 100}%`;
+  };
+
+  gallery.querySelector('.gallery-prev')?.addEventListener('click', () => update(active - 1));
+  gallery.querySelector('.gallery-next')?.addEventListener('click', () => update(active + 1));
+
+  thumbs.forEach((thumb) => {
+    thumb.addEventListener('click', () => update(Number(thumb.dataset.galleryTarget)));
+  });
+
+  slides.forEach((slide, index) => {
+    slide.addEventListener('click', () => {
+      if (index !== active) update(index);
+    });
+  });
+
+  const stage = gallery.querySelector('.gallery-stage');
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  stage?.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  stage?.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) update(active + 1);
+      else update(active - 1);
+    }
+  }, { passive: true });
+
+  stage?.addEventListener('mousemove', (event) => {
+    const rect = stage.getBoundingClientRect();
+    gallery.style.setProperty('--mx', `${event.clientX - rect.left}px`);
+    gallery.style.setProperty('--my', `${event.clientY - rect.top}px`);
+  });
+
+  update(0);
 }

@@ -5,3 +5,4 @@ hero-video-h264.mp4
 hero-video.mp4
 .DS_Store
 *.log
+.vercel
